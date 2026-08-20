@@ -83,51 +83,53 @@ function Landing() {
       </header>
 
       {/* Hero */}
-      <section className="px-5 pt-24 pb-20 md:px-8 md:pt-40 md:pb-28">
-        <h1 className="display text-[15vw] leading-[0.74] tracking-tight md:text-[10.5vw]">
-          Introducing
-          <br />
-          Kovi
-        </h1>
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          <a
-            href="#modules"
-            className="rounded-full bg-primary px-6 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground transition-opacity hover:opacity-85"
-          >
-            Request a Demo
-          </a>
-          <a
-            href="#pipeline"
-            className="rounded-full border border-foreground px-6 py-3 text-xs font-bold uppercase tracking-widest transition-colors hover:bg-accent"
-          >
-            View Architecture
-          </a>
+      <section className="grid items-center gap-10 px-5 pt-24 pb-20 md:grid-cols-[1.1fr_0.9fr] md:px-8 md:pt-40 md:pb-28">
+        <div>
+          <h1 className="display text-[15vw] leading-[0.74] tracking-tight md:text-[7vw]">
+            Introducing
+            <br />
+            Kovi
+          </h1>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href="#modules"
+              className="rounded-full bg-primary px-6 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground transition-opacity hover:opacity-85"
+            >
+              Request a Demo
+            </a>
+            <a
+              href="#pipeline"
+              className="rounded-full border border-foreground px-6 py-3 text-xs font-bold uppercase tracking-widest transition-colors hover:bg-accent"
+            >
+              View Architecture
+            </a>
+          </div>
+          <div className="rule-y mt-10 flex flex-wrap items-center justify-between gap-2 py-2 text-[11px] font-medium uppercase tracking-widest">
+            <span>Unify 245,842 records</span>
+            <span className="text-muted-foreground">Powered by explainable AI</span>
+            <span className="text-muted-foreground">PS-04 / Skill-Issue</span>
+          </div>
         </div>
-        <div className="rule-y mt-10 flex flex-wrap items-center justify-between gap-2 py-2 text-[11px] font-medium uppercase tracking-widest">
-          <span>Unify 245,842 records</span>
-          <span className="text-muted-foreground">Powered by explainable AI</span>
-          <span className="text-muted-foreground">PS-04 / Skill-Issue</span>
-        </div>
-      </section>
 
-      {/* Golden record diagram */}
-      <section className="relative mx-5 overflow-hidden md:mx-8">
-        <img
-          src={swirl}
-          alt="Abstract dark swirl representing siloed data converging"
-          width={1200}
-          height={1200}
-          className="h-[62vh] w-full object-cover md:h-[78vh]"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative aspect-square w-[78%] max-w-[520px]">
-            <Bubble label="Golden Record" className="left-1/2 top-0 -translate-x-1/2" big />
-            <Bubble label="Equity" className="left-0 top-[36%]" />
-            <Bubble label="Wealth" className="right-0 top-[36%]" />
-            <Bubble label="Mutual Funds" className="left-1/2 top-[38%] -translate-x-1/2" />
-            <Bubble label="Insurance" className="left-[6%] top-[64%]" />
-            <Bubble label="Loans" className="right-[6%] top-[64%]" />
-            <Bubble label="Golden ID" className="left-1/2 top-[80%] -translate-x-1/2" />
+        {/* Golden record diagram */}
+        <div className="relative overflow-hidden rounded-2xl">
+          <img
+            src={swirl}
+            alt="Abstract dark swirl representing siloed data converging"
+            width={1200}
+            height={1200}
+            className="h-[42vh] w-full object-cover md:h-[70vh]"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="relative aspect-square w-[82%] max-w-[440px]">
+              <Bubble label="Golden Record" className="left-1/2 top-0 -translate-x-1/2" big />
+              <Bubble label="Equity" className="left-0 top-[36%]" />
+              <Bubble label="Wealth" className="right-0 top-[36%]" />
+              <Bubble label="Mutual Funds" className="left-1/2 top-[38%] -translate-x-1/2" />
+              <Bubble label="Insurance" className="left-[6%] top-[64%]" />
+              <Bubble label="Loans" className="right-[6%] top-[64%]" />
+              <Bubble label="Golden ID" className="left-1/2 top-[80%] -translate-x-1/2" />
+            </div>
           </div>
         </div>
       </section>
