@@ -153,18 +153,20 @@ function Landing() {
 
       {/* Pipeline */}
       <section id="pipeline" className="mx-5 rounded-2xl bg-primary p-5 md:mx-8 md:p-8">
-        <p className="display text-3xl text-primary-foreground md:text-5xl">
-          The magic of one true customer
-        </p>
-        <div className="mt-8 flex flex-wrap gap-2">
-          {PILLS.map((p) => (
-            <span
-              key={p}
-              className="rounded-full bg-accent px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-accent-foreground"
-            >
-              {p}
-            </span>
-          ))}
+        <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+          <p className="display text-3xl text-primary-foreground md:max-w-[55%] md:text-5xl">
+            The magic of one true customer
+          </p>
+          <div className="flex flex-wrap gap-2 md:justify-end">
+            {PILLS.map((p) => (
+              <span
+                key={p}
+                className="rounded-full bg-accent px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-accent-foreground"
+              >
+                {p}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
