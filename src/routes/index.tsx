@@ -257,18 +257,16 @@ function Landing() {
       </section>
 
       <footer className="px-5 py-16 md:px-8">
-        <p className="display text-5xl leading-[0.9] md:text-8xl">
-          Match
-          <br />
-          Unify
-          <br />
-          Explain
-          <br />
-          Recommend
-        </p>
-        <p className="mt-10 border-t border-border pt-4 text-[11px] uppercase tracking-widest text-muted-foreground">
-          Kovi v3.0 — Financial Customer 360
-        </p>
+        <div className="grid grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-4">
+          <span className="display text-5xl leading-[0.9] md:text-8xl">Match</span>
+          <span className="display text-5xl leading-[0.9] md:text-8xl">Unify</span>
+          <span className="display text-5xl leading-[0.9] md:text-8xl">Explain</span>
+          <span className="display text-5xl leading-[0.9] md:text-8xl">Recommend</span>
+        </div>
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-4 text-[11px] uppercase tracking-widest text-muted-foreground">
+          <span>Kovi v3.0 — Financial Customer 360</span>
+          <span>© 2026 Kovi</span>
+        </div>
       </footer>
     </main>
   );
