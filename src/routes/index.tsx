@@ -85,11 +85,11 @@ function Landing() {
       {/* Hero */}
       <section className="grid items-center gap-10 px-5 pt-24 pb-20 md:grid-cols-[1.1fr_0.9fr] md:px-8 md:pt-40 md:pb-28">
         <div>
-          <h1 className="display text-[15vw] leading-[0.74] tracking-tight md:text-[7vw]">
-            Introducing
-            <br />
-            Kovi
-          </h1>
+        <h1 className="display text-[15vw] leading-[0.95] tracking-tight md:text-[7vw]">
+          Introducing
+          <br />
+          Kovi
+        </h1>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#modules"
