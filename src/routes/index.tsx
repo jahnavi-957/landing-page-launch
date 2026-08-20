@@ -241,17 +241,19 @@ function Landing() {
 
       {/* CTA */}
       <section className="bg-accent px-5 py-20 text-accent-foreground md:px-8 md:py-28">
-        <h2 className="display text-5xl md:text-7xl">
-          Begin your
-          <br />
-          identity resolution
-        </h2>
-        <a
-          href="#modules"
-          className="mt-8 inline-block rounded-full bg-primary px-7 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground transition-opacity hover:opacity-85"
-        >
-          Request a Demo
-        </a>
+        <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+          <h2 className="display text-5xl md:text-7xl">
+            Begin your
+            <br />
+            identity resolution
+          </h2>
+          <a
+            href="#modules"
+            className="self-start rounded-full bg-primary px-7 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground transition-opacity hover:opacity-85 md:self-end"
+          >
+            Request a Demo
+          </a>
+        </div>
       </section>
 
       <footer className="px-5 py-16 md:px-8">
