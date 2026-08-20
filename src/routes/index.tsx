@@ -83,8 +83,8 @@ function Landing() {
       </header>
 
       {/* Hero */}
-      <section className="px-5 pt-16 pb-12 md:px-8 md:pt-28 md:pb-16">
-        <h1 className="display text-[15vw] leading-[0.78] tracking-tight md:text-[10.5vw]">
+      <section className="px-5 pt-24 pb-20 md:px-8 md:pt-40 md:pb-28">
+        <h1 className="display text-[15vw] leading-[0.74] tracking-tight md:text-[10.5vw]">
           Introducing
           <br />
           Kovi
