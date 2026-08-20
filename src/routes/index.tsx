@@ -5,13 +5,13 @@ import acid from "@/assets/acid.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "IdentityForge — Customer 360 & Cross-Sell Engine" },
+      { title: "Kovi — Customer 360 & Cross-Sell Engine" },
       {
         name: "description",
         content:
-          "IdentityForge stitches customer identities across Equity, Mutual Funds, Insurance, Loans and Wealth into one golden record — with explainable match confidence and cross-sell opportunities.",
+          "Kovi stitches customer identities across Equity, Mutual Funds, Insurance, Loans and Wealth into one golden record — with explainable match confidence and cross-sell opportunities.",
       },
-      { property: "og:title", content: "IdentityForge — Customer 360 & Cross-Sell Engine" },
+      { property: "og:title", content: "Kovi — Customer 360 & Cross-Sell Engine" },
       {
         property: "og:description",
         content:
@@ -73,7 +73,7 @@ function Landing() {
     <main className="bg-background text-foreground">
       {/* Nav */}
       <header className="sticky top-0 z-50 flex items-center justify-between border-b border-foreground bg-background px-5 py-3 md:px-8">
-        <span className="display text-xl tracking-tight md:text-2xl">IdentityForge</span>
+        <span className="display text-xl tracking-tight md:text-2xl">Kovi</span>
         <div className="flex items-center gap-3">
           <span className="hidden rounded-full border border-foreground px-3 py-1 text-[11px] font-medium uppercase tracking-widest md:inline">
             Live Demo
@@ -87,7 +87,7 @@ function Landing() {
         <h1 className="display text-[15vw] leading-[0.82] md:text-[10.5vw]">
           Introducing
           <br />
-          IdentityForge
+          Kovi
         </h1>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
@@ -144,7 +144,7 @@ function Landing() {
           A missing PAN here, a different email there — and three RMs calling the same person.
         </p>
         <p className="text-sm leading-relaxed text-muted-foreground">
-          IdentityForge resolves the cluster, computes a match confidence with a visible waterfall,
+          Kovi resolves the cluster, computes a match confidence with a visible waterfall,
           and reports one total relationship value of ₹5.2L instead of three partial truths.
         </p>
       </section>
@@ -261,7 +261,7 @@ function Landing() {
           Recommend
         </p>
         <p className="mt-10 border-t border-border pt-4 text-[11px] uppercase tracking-widest text-muted-foreground">
-          IdentityForge v3.0 — Financial Customer 360
+          Kovi v3.0 — Financial Customer 360
         </p>
       </footer>
     </main>
