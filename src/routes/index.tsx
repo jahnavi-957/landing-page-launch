@@ -153,18 +153,20 @@ function Landing() {
 
       {/* Pipeline */}
       <section id="pipeline" className="mx-5 rounded-2xl bg-primary p-5 md:mx-8 md:p-8">
-        <p className="display text-3xl text-primary-foreground md:text-5xl">
-          The magic of one true customer
-        </p>
-        <div className="mt-8 flex flex-wrap gap-2">
-          {PILLS.map((p) => (
-            <span
-              key={p}
-              className="rounded-full bg-accent px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-accent-foreground"
-            >
-              {p}
-            </span>
-          ))}
+        <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+          <p className="display text-3xl text-primary-foreground md:max-w-[55%] md:text-5xl">
+            The magic of one true customer
+          </p>
+          <div className="flex flex-wrap gap-2 md:justify-end">
+            {PILLS.map((p) => (
+              <span
+                key={p}
+                className="rounded-full bg-accent px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-accent-foreground"
+              >
+                {p}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -239,32 +241,32 @@ function Landing() {
 
       {/* CTA */}
       <section className="bg-accent px-5 py-20 text-accent-foreground md:px-8 md:py-28">
-        <h2 className="display text-5xl md:text-7xl">
-          Begin your
-          <br />
-          identity resolution
-        </h2>
-        <a
-          href="#modules"
-          className="mt-8 inline-block rounded-full bg-primary px-7 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground transition-opacity hover:opacity-85"
-        >
-          Request a Demo
-        </a>
+        <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+          <h2 className="display text-5xl md:text-7xl">
+            Begin your
+            <br />
+            identity resolution
+          </h2>
+          <a
+            href="#modules"
+            className="self-start rounded-full bg-primary px-7 py-3 text-xs font-bold uppercase tracking-widest text-primary-foreground transition-opacity hover:opacity-85 md:self-end"
+          >
+            Request a Demo
+          </a>
+        </div>
       </section>
 
       <footer className="px-5 py-16 md:px-8">
-        <p className="display text-5xl leading-[0.9] md:text-8xl">
-          Match
-          <br />
-          Unify
-          <br />
-          Explain
-          <br />
-          Recommend
-        </p>
-        <p className="mt-10 border-t border-border pt-4 text-[11px] uppercase tracking-widest text-muted-foreground">
-          Kovi v3.0 — Financial Customer 360
-        </p>
+        <div className="grid grid-cols-2 gap-x-6 gap-y-4 md:grid-cols-4">
+          <span className="display text-5xl leading-[0.9] md:text-8xl">Match</span>
+          <span className="display text-5xl leading-[0.9] md:text-8xl">Unify</span>
+          <span className="display text-5xl leading-[0.9] md:text-8xl">Explain</span>
+          <span className="display text-5xl leading-[0.9] md:text-8xl">Recommend</span>
+        </div>
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-4 text-[11px] uppercase tracking-widest text-muted-foreground">
+          <span>Kovi v3.0 — Financial Customer 360</span>
+          <span>© 2026 Kovi</span>
+        </div>
       </footer>
     </main>
   );
